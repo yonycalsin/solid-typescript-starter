@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["prettier", "@typescript-eslint", "@yonycalsin/import-sort"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@yonycalsin/import-sort/typescript-react-imports": "error",
+    "@yonycalsin/import-sort/typescript-react-exports": "error"
+  }
+}
